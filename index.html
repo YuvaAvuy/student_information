@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Information Form</h2>
+        <form id="studentForm" action="https://formspree.io/f/xovadnpj" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class" required><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="parentName">Parent/Guardian Name:</label>
+            <input type="text" id="parentName" name="parentName" required><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="transport">Transport Type:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="bus" name="transport" value="Bus">
+                <label for="bus">Bus</label>
+                <input type="checkbox" id="bike" name="transport" value="Bike">
+                <label for="bike">Bike</label>
+                <input type="checkbox" id="walk" name="transport" value="Walk">
+                <label for="walk">Walk</label>
+            </div>
+
+            <label for="bloodGroup">Blood Group:</label>
+            <div class="radio-group">
+                <input type="radio" id="a+" name="bloodGroup" value="A+" required>
+                <label for="a+">A+</label>
+                <input type="radio" id="b+" name="bloodGroup" value="B+">
+                <label for="b+">B+</label>
+                <input type="radio" id="ab+" name="bloodGroup" value="AB+">
+                <label for="ab+">AB+</label>
+                <input type="radio" id="o+" name="bloodGroup" value="O+">
+                <label for="o+">O+</label>
+            </div>
+
+            <label for="subject">Favorite Subject:</label>
+            <input type="text" id="subject" name="subject"><br>
+
+            <label for="activities">Extracurricular Activities:</label>
+            <textarea id="activities" name="activities" rows="3"></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
